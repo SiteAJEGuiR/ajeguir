@@ -1,0 +1,356 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #200995; /* Bleu foncé pour le fond de l'en-tête */
+}
+
+.logo img {
+    height: 80px; /* Ajustez en fonction de la taille de votre logo */
+    width: auto;
+}
+
+nav {
+    background-color: #200995; /* Bleu foncé pour le fond de la navigation */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Couleur blanche pour les liens du menu */
+    padding: 5px 10px;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #47963b; /* Vert pour l'effet de survol des liens */
+}
+
+.don a {
+    padding: 10px 20px;
+    background-color: #fff40c; /* Jaune pour le bouton de don */
+    color: #86137b; /* Pourpre pour le texte du bouton de don */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.don a:hover, .don a:focus {
+    background-color: #ff0f02; /* Rouge pour l'effet de survol du bouton de don */
+}
+
+/* Footer styles */
+/* ... Autres styles ... */
+
+/* Styles du header et du footer pour une uniformité de hauteur et de padding */
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+/* ... Autres styles ... */
+
+/* Style pour le menu déroulant */
+nav ul li .submenu {
+    display: none; /* Cache le sous-menu par défaut */
+    position: absolute; /* Positionne le sous-menu hors du flux normal du document */
+    background-color: #fff; /* Définit un arrière-plan blanc pour le sous-menu */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Ajoute une ombre pour un effet de profondeur */
+    z-index: 100; /* S'assure que le sous-menu est au-dessus des autres éléments */
+}
+
+nav ul li:hover .submenu {
+    display: block; /* Affiche le sous-menu lorsque l'élément li parent est survolé */
+}
+
+/* Style pour les liens du sous-menu */
+nav ul li .submenu a {
+    color: black; /* Définit la couleur de texte pour les liens du sous-menu */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    padding: 12px 16px; /* Ajoute de l'espacement autour du texte des liens */
+    display: block; /* Affiche chaque lien du sous-menu comme un bloc */
+}
+
+nav ul li .submenu a:hover {
+    background-color: #f2f2f2; /* Couleur de fond pour l'effet de survol */
+}
+
+
+
+form {
+    max-width: 400px; /* Ajustez la largeur selon vos préférences */
+    margin: auto;
+    padding: 20px;
+    background-color: #f4f4f4; /* Couleur de fond pour le formulaire */
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px #000000; /* Ombre légère */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical; /* Permet à l'utilisateur de redimensionner la zone de texte verticalement */
+}
+
+input[type="submit"] {
+    background-color: #47963b; /* Couleur de fond du bouton Envoyer */
+    color: #fff; /* Couleur du texte du bouton */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #200995; /* Nouvelle couleur de fond au survol */
+}
+
+
+
+/* ... */
+
+/* Styles spécifiques pour le footer */
+footer {
+    background-color: #fff40c; /* Jaune pour le fond du footer */
+    color: #200995; /* Bleu foncé pour le texte pour une bonne lisibilité sur le fond jaune */
+    font-size: 0.9em; /* Taille de police légèrement plus petite que la normale */
+}
+
+footer a {
+    color: #200995; /* Bleu foncé pour les liens du footer */
+}
+/* Disposition des logos social media dans le pied de page*/
+.social-media-links {
+    text-align: center; /* Centrer le contenu horizontalement */
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Afficher les éléments en ligne */
+}
+
+.social-icons li {
+    margin-right: 10px; /* Espacement entre les icônes */
+}
+
+.social-icons img {
+    width: 30px; /* Ajustez la taille des logos selon vos préférences */
+    height: auto;
+}
+
+
+/* Ajoutez des styles supplémentaires ci-dessous si nécessaire */
+
+.swiper-container {
+    width: 100%;
+    height: 400px; /* Vous pouvez ajuster la hauteur selon vos besoins */
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+/* Responsive design pour le slider */
+@media (max-width: 768px) {
+    .swiper-container {
+        height: 200px; /* Hauteur plus petite pour les appareils mobiles */
+    }
+}
+
+/* Vos autres styles */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.equipe {
+    text-align: center;
+    padding: 20px;
+}
+
+.membre {
+    display: inline-block;
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.membre img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.membre h3, .membre p {
+    margin: 10px 0;
+}
+/* ... Votre code CSS existant ... */
+
+/* Style pour la page "Partenaires" */
+.partenaires {
+    text-align: center;
+    padding: 20px;
+}
+
+.ligne {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.partenaire {
+    max-width: 150px;
+}
+
+.partenaire img {
+    max-width: 100%;
+}
+
+/* ... Votre code CSS existant ... */
+/* Ajoutez ces styles à votre fichier style.css */
+
+.activites {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.activite {
+    text-align: center;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px #000000; /* Ombre légère */
+    background-color: #f4f4f4; /* Couleur de fond pour chaque activité */
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.activite:hover {
+    transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+.activite img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.activite h3 {
+    color: #200995; /* Couleur spécifique pour le titre de chaque activité */
+}
+
+.activite p {
+    color: #666; /* Couleur spécifique pour le texte de chaque activité */
+}
+/* CSS DE LA JOURNEE D'INTEGRATION */
+
+.activite-details {
+    text-align: center;
+    padding: 20px;
+}
+
+.activite-details h1 {
+    color: #200995; /* Couleur spécifique pour le titre de l'activité */
+}
+
+
+/* Ajoutez ces styles à votre fichier style.css */
+
+.activite-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% de la hauteur de la fenêtre visible */
+    margin-bottom: 70px; /* Ajustez la marge en bas selon vos préférences */
+}
+
+.activite-details img {
+    max-width: 100%; /* Utilisez la largeur maximale du conteneur */
+    height: auto;
+    max-height: 70vh; /* Limitez la hauteur de l'image à 70% de la hauteur de la fenêtre visible */
+}
+
+    /* Centrer les textes des pages */
+main {
+    text-align: center;
+}
+
+/* Centrer les textes des sous-menus de "L'Association" */
+nav ul li .submenu {
+    text-align: left; /* Rétablir l'alignement normal pour le texte du sous-menu */
+}
+
+
+/* Style pour la page "L'Equipe" */
+.equipe {
+    text-align: center;
+    padding: 20px;
+}
+
+.membre {
+    display: inline-block;
+    margin: 20px;
+    max-width: 300px;
+    height: 400px; /* Hauteur fixe pour tous les blocs membre */
+    text-align: center;
+}
+
+.membre img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assurez-vous que l'image couvre complètement le conteneur tout en conservant ses proportions */
+    border-radius: 50%;
+}
+
+.membre h3, .membre p {
+    margin: 10px 0;
+}
+
+/* Ajoutez ces styles à votre fichier CSS */
+.fixe {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
